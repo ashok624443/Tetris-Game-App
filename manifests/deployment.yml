@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: ashoktetrisgameapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ashoktetrisgameapp
+  template:
+    metadata:
+      labels:
+        app: ashoktetrisgameapp 
+    spec:
+      containers:
+        - name: ashoktetrisgameapp 
+          image: mariocontainerregistry2023.azurecr.io/ashoktetrisgameapp
+          ports:
+          - containerPort: 80
