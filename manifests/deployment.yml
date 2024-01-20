@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: tetrisgame 
-          image: marioaks.azurecr.io/mariogame
+          image: marioaks.azurecr.io/tetrisgame
           ports:
           - containerPort: 80
